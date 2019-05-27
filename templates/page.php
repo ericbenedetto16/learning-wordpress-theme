@@ -17,7 +17,6 @@
                             <p><?php the_tags( 'Tags: ', ', ' ); ?></p>
                             <p><?php the_content(); ?></p>
                         </article>
-                        <p>Hello</p>
                         <?php
                             endwhile;
                             else:

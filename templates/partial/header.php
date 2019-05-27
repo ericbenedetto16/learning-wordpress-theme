@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header class="pl-4">
+    <header id="front" class="pl-4">
       <section><?php the_custom_logo(); ?></section>
 
       <div class="nav-wrapper ml-5">
