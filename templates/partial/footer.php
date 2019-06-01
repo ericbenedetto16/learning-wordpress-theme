@@ -9,10 +9,9 @@
             ?>
             <iframe
                 class="my-auto"
-                width="100%"
-                height="225px"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?q=<?php echo $address ?>&key=<?php echo $key ?>&zoom=15" allowedfullscreen>
+                height="225"
+                style="border:0;width:100%"
+                src="https://www.google.com/maps/embed/v1/place?q=<?php echo $address ?>&key=<?php echo $key ?>&zoom=15" allowfullscreen>
             </iframe>
             </section>
 </footer>
