@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="content-area">
-        <main>
+        <main class="article mt-3">
             <section class="middle-area">
                 <div class="container-fluid">
                     <div>

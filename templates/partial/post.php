@@ -1,5 +1,6 @@
-<main class="article" id="post-<?php the_ID(); ?>">
-    <article class="mt-5">
+<main class="article mt-2" id="post-<?php the_ID(); ?>">
+    <?php get_template_part( 'templates/partial/pagination' ); ?>
+    <article>
         <h2><?php the_title(); ?></h2>
         <?php the_post_thumbnail( array( 275, 275 ) ); ?>
         <div class="meta-info">

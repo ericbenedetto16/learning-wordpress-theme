@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="content-area">
-        <main class="text-left">
+        <main class="article text-left pl-5">
         <?php
             //If there are posts
             if( have_posts() ):
