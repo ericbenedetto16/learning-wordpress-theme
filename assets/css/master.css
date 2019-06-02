@@ -678,6 +678,10 @@ section.pay-dues p {
         background: #efe8e8;
     }
 
+    body.home.page {
+        background: #d9dde2;
+    }
+
     /* Article Styling */
     main.article {
         width:100%;
