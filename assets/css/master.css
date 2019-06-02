@@ -1,5 +1,4 @@
 /* Styling Resets */
-
 * {
     margin: 0;
     padding: 0;
@@ -206,33 +205,14 @@ main {
     text-align: center
 }
 
-.main-footer {
-    position: relative;
-    bottom: 0;
-    background: #ff1414;
-    width: 100%;
-    height: 80px;
-    text-align: center
-}
-
-.main-footer a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%)
-}
-
 main.index {
     width: 70%;
     background: #d9dde2;
     padding: 15px 0;
     text-align: center
 }
+
+/* Image Slider Styling */
 
 .carousel-container {
     display: -webkit-box;
@@ -280,6 +260,7 @@ button.right {
     right: 0
 }
 
+/* Social Badge Banner Styling */
 section.banner-container {
     margin: 0 0 5px 0;
     background: #ff1414;
@@ -320,9 +301,11 @@ p.banner-text {
     -ms-grid-row-align: center;
     align-self: center;
     font-size: 2em;
-    font-weight: 700
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
+/* Widget Container Styling */
 .widget-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -346,6 +329,8 @@ p.banner-text {
     width: 600px;
     padding-left: 5px
 }
+
+/* Article Styling */
 
 main.article {
     width: 630px;
@@ -372,6 +357,7 @@ article.article p {
     margin-top: 15px
 }
 
+/* News Cascade Section [Not in WordPress Theme] */
 .events-container {
     margin-top: 0;
     display: -webkit-box;
@@ -454,8 +440,7 @@ section.article-preview {
     text-decoration: underline
 }
 
-
-/* Forms */
+/* Form Component Styling*/
 input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0
@@ -566,9 +551,8 @@ button.styled {
     margin: 5px auto 10px auto
 }
 
- /* Sidebar */
-
- aside.sidebar {
+/* Sidebar Styling */
+aside.sidebar {
     margin: 5px 0;
     padding: 0 25px;
     overflow-x: hidden;
@@ -658,16 +642,43 @@ section.pay-dues p {
     font-size: 1.2em
 }
 
+/* Footer Styling */
+.main-footer {
+    position: relative;
+    bottom: 0;
+    background: #ff1414;
+    width: 100%;
+    height: 80px;
+    text-align: center
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
 /* Media Queries */
-
-
 @media (min-width: 2200px) {
+    /* General Styling */
     body {
         margin:0 auto
     }
 }
 
 @media (max-width: 980px) {
+    /* Wordpress Class Styling */
+    body.single, body.page, body.blog {
+        background: #efe8e8;
+    }
+
+    /* Article Styling */
     main.article {
         width:100%;
         background: #efe8e8;
@@ -675,20 +686,36 @@ section.pay-dues p {
 }
 
 @media (max-width: 920px) {
+    /* Header and Nav Styling */
     .button-holder {
         margin-right:0;
     }
 
+    nav.nav-header-main ul li a {
+        font-size:1.4em
+    }
+
+    nav.nav-header-main ul li button {
+        font-size: 1.4em
+    }
+
+    nav.nav-header-main ul li ul li {
+        padding: 10px 0
+    }
+
+    /* Main Content Styling */
     main.index {
         width: 100%;
         margin: 0 auto;
         padding: 0;
     }
 
+    /* Social Banner Styling */
     p.banner-text {
         font-size: 1.4em;
     }
 
+    /* Widget Container Styling */
     .widget-container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -712,27 +739,14 @@ section.pay-dues p {
         text-decoration: underline;
     }
 
-    /* Sidebar */
+    /* Sidebar Styling*/
     aside.sidebar {
         display:none
-    }
-    
-    /* Nav Styling */
-    nav.nav-header-main ul li a {
-        font-size:1.4em
-    }
-
-    nav.nav-header-main ul li button {
-        font-size: 1.4em
-    }
-
-    nav.nav-header-main ul li ul li {
-        padding: 10px 0
     }
 }
 
 @media (max-width: 865px) {
-    /* Nav Styling */
+    /* Header and Nav Styling */
     nav.nav-header-main ul li a {
         font-size:1.3em
     }
@@ -743,7 +757,7 @@ section.pay-dues p {
 }
 
 @media (max-width: 845px) {
-    /* Nav Styling */
+    /* Header and Nav Styling */
     nav.nav-header-main ul li a {
         font-size:1.2em
     }
@@ -758,7 +772,7 @@ section.pay-dues p {
 }
 
 @media (max-width: 768px) {
-    /* Nav Styling */
+    /* Header and Nav Styling */
     header {
         justify-content: center;
         flex-flow: row nowrap;
@@ -799,6 +813,20 @@ section.pay-dues p {
 }
 
 @media (max-width: 645px) {
+    /* Header and Nav Styling */ 
+    nav.nav-header-main ul li ul {
+        padding: 0
+    }
+
+    nav.nav-header-main ul li a {
+        padding: 2px
+    }
+    nav.nav-header-main ul li:hover ul {
+        margin-top: 0;
+        padding-top: 10px
+    }
+
+    /* Image Slider Styling */
     .carousel img {
         height: 500px;
     }
@@ -807,6 +835,7 @@ section.pay-dues p {
         padding: 4px 10px;
     }
 
+    /* Social Banner Styling */
     section.banner-container {
         margin: auto;
         height: 80px;
@@ -820,10 +849,7 @@ section.pay-dues p {
         padding: 15px;
     }
 
-    p.banner-text {
-        font-size: 1.6em;
-    }
-
+    /* Widget Container Styling */
     .widget-container {
         min-height: 500px;
     }
@@ -833,6 +859,15 @@ section.pay-dues p {
         min-height: 500px;
     }
 
+    .googlecalendar.events-page {
+        width: 100vw;
+        padding: 0;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center
+    }
+
+    /* News Cascade Section [Not in WordPress Theme] */
     section.events {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -845,39 +880,20 @@ section.pay-dues p {
         -ms-flex-pack: center;
         justify-content: center
     }
-
-    .googlecalendar.events-page {
-        width: 100vw;
-        padding: 0;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center
-    }
-
-    /* Nav Styling */ 
-    nav.nav-header-main ul li ul {
-        padding: 0
-    }
-
-    nav.nav-header-main ul li a {
-        padding: 2px
-    }
-    nav.nav-header-main ul li:hover ul {
-        margin-top: 0;
-        padding-top: 10px
-    }
 }
 
 @media (max-width: 560px) {
+    /* General Styling */
     html {
         max-width: 99vw;
     }
     
+    /* Image Slider Styling */
     .carousel img {
         height:300px
     }
 
-    /* Nav Styling */
+    /* Header and Nav Styling */
     a.header-logo img {
         max-height: 100px;
         max-width: 100px;
@@ -974,9 +990,15 @@ section.pay-dues p {
     .nav-header-mobile ul li a button {
         opacity: 0
     }
+
+    /* Social Banner Styling */
+    p.banner-text {
+        font-size: 1.1em;
+    }
 }
 
 @media (max-width: 400px) {
+    /* News Cascade Section [Not in WordPress Theme] */    
     main.events-container {
         width:100vw
     }
@@ -991,6 +1013,7 @@ section.pay-dues p {
 }
 
 @media (max-width: 375px) {
+    /* Social Banner Styling */
     a.social-badge img {
         width:40px;
         height: 40px
@@ -998,6 +1021,7 @@ section.pay-dues p {
 }
 
 @media (max-width: 320px) {
+    /* Widget Conatiner Styling */
     .widget-container {
         width:100vw;
         overflow: hidden
