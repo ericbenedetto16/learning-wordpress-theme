@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class() ?>>
     <header class="front-page">
       <section><?php the_custom_logo(); ?></section>
       <div class="nav-wrapper">
