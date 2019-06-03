@@ -1,3 +1,3 @@
 <?php
-    get_template_part( 'templates/single.php' );
+    get_template_part( 'templates/single' );
 ?>
